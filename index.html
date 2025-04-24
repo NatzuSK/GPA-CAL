@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GPA Calculator</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+        body {
+            font-family: "Kanit", sans-serif;
+        }
+    </style>
+</head>
+
+<body class="bg-gradient-to-br from-blue-100 to-white min-h-screen">
+    <div class="max-w-2xl mx-auto py-12 px-4">
+        <div class="bg-white p-8 rounded-2xl shadow-lg">
+            <h1 class="text-3xl font-bold text-center text-blue-600 mb-6">คำนวณ GPA</h1>
+
+            <div id="subject-list"></div>
+
+            <div class="flex gap-4 justify-center mt-6">
+                <button onclick="addSubject()"
+                    class="bg-green-500 hover:bg-green-600 text-white px-6 py-2 rounded-lg shadow">
+                    เพิ่มวิชา
+                </button>
+                <button onclick="deleteSubject()"
+                    class="bg-red-500 hover:bg-red-600 text-white px-6 py-2 rounded-lg shadow">
+                    ลบวิชา
+                </button>
+            </div>
+
+            <h2 class="text-center text-2xl font-semibold text-blue-800 mt-8">
+                GPA : <span id="gpa-result">0.00</span>
+            </h2>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
